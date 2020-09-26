@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+	body{
+		text-align: center;
+		font-size: 20px;
+	}
+	.quote{
+		font-size: 50px;
+	}
+	.author{
+
+	}
+	.work{
+
+	}
+	.date{
+
+	}
+</style>
+	<script>
+         // place your images in this array
+     function quote(){  
+         var quote = [
+         	'quotea',
+         
+         	'quoteb',
+         
+         	'quotec',
+          ];
+
+          var author = [
+            'authora',
+
+            'authorb',
+
+            'authorc'
+          ];
+
+          var quotesym = '"';
+         
+         
+         var imnum = Math.floor(Math.random() * quote.length);
+
+         var quoa = quote[ imnum ];
+         var auta = author[ imnum ];
+
+           document.write("<span class='quote'>"+quotesym+quoa+quotesym+"</span><br><span class='author'>-"+auta+"</span>");
+           	}
+      </script>
+</head>
+<body>
+<div style="position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);">
+	<script>quote();</script>
+</div>
+</body>
+</html>
