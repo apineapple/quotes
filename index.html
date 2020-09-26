@@ -3,28 +3,27 @@
 <head>
 	<title></title>
 <style>
-	body{
-		text-align: center
+	div{
+		text-align: right;
 				font-size: 20px;
 	}
 	.quote{
 		font-size: 50px;
+		width:100%;
+    text-align:center;
 	}
-	.author{
-	font-size: 20px;
+	.author {
+		text-align: right !important;
 	}
-	button{
-		border: 2.5px black solid;
-		background: none;
-		margin-top: 60px;
-		text-align: center;
-		width: 100%;
-		padding: 5px;
+	a{
+		margin-top: 60px !important;
+		color: blue;
+		width:100%;
+    text-align:center !important;
+    display: block;
 	}
-	button:hover{
-		background: black;
-		border-color: white;
-		color: white
+	a:hover{
+		color: red;
 	}
 </style>
 	<script>
@@ -65,7 +64,7 @@
   /* bring your own prefixes */
   transform: translate(-50%, -50%);">
 	<script>quote();</script><br>
-	<button class="refresh" onClick="window.location.reload();">more wise words</button>
+	<a href="" class="refresh" onClick="window.location.reload();">more wise words</a>
 </div>
 </div>
 </body>
